@@ -1,0 +1,40 @@
+# Railway এনভায়রনমেন্ট ভেরিয়েবল
+
+# ডাটাবেস কানেকশন
+DB_DATA_SOURCE=postgresql://postgres.xbbzjgckjbjnjnwuznbg:%40%23mdsrabon13@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres
+DB_PREPARE_STMT=false
+DB_POOL_ENABLE=false
+
+# JWT কনফিগারেশন
+JWT_SECRET=jH7bK9pL2mN5qR8sT3uV6wX9yZ2aB4cD7eF1gH3jK5lM8nP0qR
+JWT_ALLOWED_USERS=mdsrabon13
+JWT_SESSION_TIME=30d
+
+# টেলিগ্রাম কনফিগারেশন
+TG_POOL_SIZE=8
+TG_RATE=100
+TG_RATE_BURST=5
+TG_NTP=true
+TG_DISABLE_STREAM_BOTS=false
+TG_RATE_LIMIT=true
+TG_RECONNECT_TIMEOUT=5m
+
+# টেলিগ্রাম স্ট্রিম কনফিগারেশন
+TG_STREAM_BUFFERS=8
+TG_STREAM_CHUNK_TIMEOUT=20s
+
+# টেলিগ্রাম আপলোড কনফিগারেশন
+TG_UPLOADS_MULTI_THREADS=0
+TG_UPLOADS_ENCRYPTION_KEY=7xA2bC9dE5fG8hI3jK6lM1nO4pQ7rS0tU3vW9xY2zZ5aB8cD
+TG_UPLOADS_MAX_RETRIES=10
+TG_UPLOADS_RETENTION=7d
+TG_UPLOADS_THREADS=8
+
+# সার্ভার কনফিগারেশন
+SERVER_PORT=8080
+SERVER_READ_TIMEOUT=1h
+SERVER_WRITE_TIMEOUT=1h
+SERVER_GRACEFUL_SHUTDOWN=10s
+
+# লগ কনফিগারেশন
+LOG_LEVEL=info
