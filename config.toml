@@ -1,0 +1,40 @@
+[db]
+data-source = "postgresql://postgres.xbbzjgckjbjnjnwuznbg:%40%23mdsrabon13@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres"
+prepare-stmt = false
+
+[db.pool]
+enable = false
+
+[jwt]
+allowed-users = ["neil_0998"]  # আপনার টেলিগ্রাম ইউজারনেম (@ ছাড়া)
+secret = "jH7bK9pL2mN5qR8sT3uV6wX9yZ2aB4cD7eF1gH3jK5lM8nP0qR"
+session-time = "30d"
+
+[tg]
+pool-size = 8
+rate = 100
+rate-burst = 5
+ntp = true
+disable-stream-bots = false
+rate-limit = true
+reconnect-timeout = "5m"
+
+[tg.stream]
+buffers = 8
+chunk-timeout = "20s"
+
+[tg.uploads]
+multi-threads = 0
+encryption-key = "7xA2bC9dE5fG8hI3jK6lM1nO4pQ7rS0tU3vW9xY2zZ5aB8cD"
+max-retries = 10
+retention = "7d"
+threads = "8"
+
+[server]
+graceful-shutdown = "10s"
+port = 8080
+read-timeout = "1h"
+write-timeout = "1h"
+
+[log]
+level = "info"
