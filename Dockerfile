@@ -1,7 +1,9 @@
-FROM teldrive/teldrive
+FROM teldrive/teldrive:latest
 
 COPY config.toml /config.toml
 
 EXPOSE 8080
 
-CMD ["teldrive", "run"]
+# Use the full path to the executable
+ENTRYPOINT ["/teldrive"]
+CMD ["run"]
